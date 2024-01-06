@@ -144,20 +144,20 @@ plot(ArrayRT1,ArrayRT2,ArrayRM1,ArrayRM2),grid
 title('Two-dimensional tactical missile-target engagement simulation')
 xlabel('Downrange (Ft) ')
 ylabel('Altitude (Ft)')
-% figure
-% plot(ArrayT,ArrayXNCG),grid
-% title('Two-dimensional tactical missile-target engagement simulation')
-% xlabel('Time (sec)')
-% ylabel('Acceleration of missle (G)')
-% figure
-% plot(ArrayT, ArrayMissileAngle), grid
-% title('Missile Velocity Angle relative to earth frame')
-% xlabel('Time (sec)')
-% ylabel('Angle of missile velocity (deg)')
-% figure
-% plot(ArrayT, ArrayMissileY), grid
-% title('Missile Y Velocity')
-% xlabel('Time (sec)')
-% ylabel('missile velocity Y (deg)')
+figure
+plot(ArrayT,ArrayXNCG),grid
+title('Two-dimensional tactical missile-target engagement simulation')
+xlabel('Time (sec)')
+ylabel('Acceleration of missle (G)')
+figure
+plot(ArrayT, ArrayMissileAngle), grid
+title('Missile Velocity Angle relative to earth frame')
+xlabel('Time (sec)')
+ylabel('Angle of missile velocity (deg)')
+figure
+plot(ArrayT, ArrayMissileY), grid
+title('Missile Y Velocity')
+xlabel('Time (sec)')
+ylabel('missile velocity Y (deg)')
 clc
 output=[ArrayT',ArrayRT1',ArrayRT2',ArrayRM1',ArrayRM2',ArrayXNCG',ArrayRTM' ];
